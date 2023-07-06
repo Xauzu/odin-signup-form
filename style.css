@@ -14,7 +14,6 @@
 
 html, body, form {
     height: 100%;
-    justify-content: center;
     display: flex;
 }
 
@@ -101,12 +100,10 @@ input {
 
 .background {
     height: 100%;
-    flex: 1;
 }
 
 form {
     min-width: 70%;
-    flex: 2;
 }
 
 .input {
@@ -138,6 +135,7 @@ input {
 
 .message {
     padding: 5%;
+    padding-top: max(10vw, 5%);
     font-size: 24px;
 }
 
