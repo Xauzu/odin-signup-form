@@ -13,25 +13,29 @@
         <div>
             <label for="user-name">Username: </label>
             <p></p>
-            <input type="text" id="user-name" name="user" minlength="3" required />
+            <input type="text" id="user-name" name="user" minlength="3" maxlength="24" pattern="[A-Za-z\d]+" 
+                title="Username must be 3 to 24 letters or numbers." required />
         </div>
 
         <div>
             <label for="first-name">First Name: </label>
             <p></p>
-            <input type="text" id="first-name" name="first" minlength="1" required />
+            <input type="text" id="first-name" name="first" minlength="1" pattern="[A-Za-z]+"
+                title="First name must contain letters" required />
         </div> 
 
         <div>
             <label for="last-name">Last Name: </label>
             <p></p>
-            <input type="text" id="last-name" name="last" minlength="1" required />
+            <input type="text" id="last-name" name="last" minlength="1" pattern="[A-Za-z]+"
+                title="Last name must contain letters."  required />
         </div> 
 
         <div>
             <label for="email">Email: </label>
             <p></p>
-            <input type="email" id="email" name="em" required />
+            <input type="email" id="email" name="em" 
+                title="Must be a valid email." required />
         </div> 
 
         <div>
@@ -43,13 +47,13 @@
         <div>
             <label for="pass">Password: </label>
             <p></p>
-            <input type="password" id="pass" name="pw" minlength="1" required />
+            <input type="password" id="pass" name="pw" minlength="6" required />
         </div> 
 
         <div>
             <label for="pass2">Password confirmation: </label>
             <p></p>
-            <input type="password" id="pass2" name="pw2" minlength="1" required />
+            <input type="password" id="pass2" name="pw2" minlength="6" required />
         </div> 
 
         <div>
