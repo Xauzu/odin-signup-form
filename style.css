@@ -6,24 +6,65 @@
 html, body, form {
     height: 100%;
     width: 100%;
-    align-items: center;
     justify-content: center;
     display: flex;
 }
 
 form {
     flex-direction: column;
-    width: 50%;
 }
 
 form > div {
     padding: 4px;
 }
 
-form > div > :invalid {
-    border: 4px solid red;
+.data, button {
+    margin: 0px 30px;
 }
 
-form > div > :valid {
-    border: 2px solid black;
+button {
+    margin-top: 75px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+.background, form {
+    display: flex;
+}
+
+.background {
+    position: relative;
+}
+
+.credits {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.background {
+    width: min(40vw, 40%);
+    height: 100%;
+    flex: 1;
+}
+
+form {
+    min-width: 70%;
+    flex: 2;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
