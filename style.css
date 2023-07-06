@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body, form {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    flex-direction: column;
+    width: 50%;
+}
+
+form > div {
+    padding: 4px;
+}
