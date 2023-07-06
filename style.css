@@ -40,11 +40,11 @@ input {
     border: 2px solid lightblue;
 }
 
-.validation:not(:focus):invalid {
+.validation:not(:focus):invalid, .invalid:not(:focus) {
     border: 2px solid red;
 }
 
-.validation:not(:focus):valid {
+.validation:not(:focus):valid, .valid:not(:focus) {
     border: 2px solid green;
 }
 

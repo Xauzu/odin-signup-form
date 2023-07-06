@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="background">
@@ -62,13 +62,13 @@
                     <div class="data">
                         <label for="pass">PASSWORD </label>
                         <p></p>
-                        <input type="password" id="pass" name="pw" minlength="6"
+                        <input class="password" type="password" id="pass" name="pw" minlength="6"
                             title="Password must contain at least 6 characters." required />
                     </div>
                     <div class="data">
                         <label for="pass2">CONFIRM PASSWORD </label>
                         <p></p>
-                        <input type="password" id="pass2" name="pw2" required />
+                        <input class="confirmation" type="password" id="pass2" name="pw2"/>
                     </div>
                 </div>
             </div>
