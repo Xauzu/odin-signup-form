@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+:root {
+    --theme-color: darkcyan; 
+}
+
 @font-face {
     font-family: "Norse Bold";
     src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf) format("truetype");
@@ -22,12 +26,18 @@ form > div {
     padding: 4px;
 }
 
-.data, button {
-    margin: 0px 30px;
+button, input[type="submit"] {
+    height: 46px;
+    margin: 35px 5%;
+    padding: 8px 32px;
+    background-color: var(--theme-color);
+    color: white;
+    border: 3px solid var(--theme-color);
+    border-radius: 8px;
 }
 
-button {
-    margin-top: 75px;
+input {
+    border: 2px solid lightblue;
 }
 
 .validation:not(:focus):invalid {
@@ -85,7 +95,7 @@ button {
     color: white;
 }
 
-a {
+.source {
     color: white;
 }
 
@@ -99,7 +109,56 @@ form {
     flex: 2;
 }
 
+.input {
+    background-color: white;
+    padding: 3% 5%;
+    box-shadow: 5px 3px lightgray;
+}
+
+.data {
+    margin-right: 32px;
+    padding: 8px 0px;
+}
+
+input {
+    height: 1.4rem;
+    font-size: 1.2rem;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.message {
+    padding: 5%;
+    font-size: 24px;
+}
+
+.title {
+    padding: 4px 0 16px 0;
+    font-size: 24px;
+}
+
+.message > p {
+    padding: 0px 0px 16px 0px;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+.login-link {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.hasAccount {
+    padding: 0 5%;
 }

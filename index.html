@@ -11,7 +11,7 @@
 <body>
     <div class="background">
         <img src="akira-hojo-bg.jpg" alt="body of water">
-        <div class="credits">Photo by <a href="https://unsplash.com/@joephotography">Akira Hojo</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        <div class="credits">Photo by <a class="source" href="https://unsplash.com/@joephotography">Akira Hojo</a> on <a class="source" href="https://unsplash.com/">Unsplash</a></div>
         <div class="sidebar">
             <div class="logo">
                 <img src="odin-lined.png" alt="Odin line art">
@@ -19,54 +19,64 @@
             </div>
         </div>
     </div>
-    <form>
-        <div class="flex-row">
-            <div class="data">
-                <label for="first-name">FIRST NAME </label>
-                <p></p>
-                <input type="text" id="first-name" name="first" minlength="1" pattern="[A-Za-z]+"
-                    title="First name must contain letters" required />
-            </div>
-            <div class="data">
-                <label for="last-name">LAST NAME </label>
-                <p></p>
-                <input type="text" id="last-name" name="last" minlength="1" pattern="[A-Za-z]+"
-                    title="Last name must contain letters."  required />
-            </div>
-        </div>
 
-        <div class="flex-row">
-            <div class="data">
-                <label for="email">EMAIL </label>
-                <p></p>
-                <input type="email" id="email" name="em"
-                    title="Must be a valid email." required />
+    <div class="right">
+        <form>
+            <div class="message">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
+                <p>Sign up <span class="italicized">now</span> to get started.</p>
+    
+                <p>You <span class="italicized">know</span> you want to.</p>
             </div>
-            <div class="data">
-                <label for="phone">PHONE NUMBER </label>
-                <p></p>
-                <input type="tel" id="phone" name="ph"
-                    title="Must be a valid phone number." required />
+            <div class="input">
+                <div class="title">Sign up!</div>
+                <div class="flex-row">
+                    <div class="data">
+                        <label for="first-name">FIRST NAME </label>
+                        <p></p>
+                        <input type="text" id="first-name" name="first" minlength="1" pattern="[A-Za-z]+"
+                            title="First name must contain letters" required />
+                    </div>
+                    <div class="data">
+                        <label for="last-name">LAST NAME </label>
+                        <p></p>
+                        <input type="text" id="last-name" name="last" minlength="1" pattern="[A-Za-z]+"
+                            title="Last name must contain letters."  required />
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="data">
+                        <label for="email">EMAIL </label>
+                        <p></p>
+                        <input type="email" id="email" name="em"
+                            title="Must be a valid email." required />
+                    </div>
+                    <div class="data">
+                        <label for="phone">PHONE NUMBER </label>
+                        <p></p>
+                        <input type="tel" id="phone" name="ph"
+                            title="Must be a valid phone number." required />
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="data">
+                        <label for="pass">PASSWORD </label>
+                        <p></p>
+                        <input type="password" id="pass" name="pw" minlength="6"
+                            title="Password must contain at least 6 characters." required />
+                    </div>
+                    <div class="data">
+                        <label for="pass2">CONFIRM PASSWORD </label>
+                        <p></p>
+                        <input type="password" id="pass2" name="pw2" required />
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="flex-row">
-            <div class="data">
-                <label for="pass">PASSWORD </label>
-                <p></p>
-                <input type="password" id="pass" name="pw" minlength="6" 
-                    title="Password must contain at least 6 characters." required />
+            <div>
+                <input type="submit" value="Create Account">
+                <div class="hasAccount">Already have an account? <a class="login-link" href="#">Log in</a></div>
             </div>
-            <div class="data">
-                <label for="pass2">CONFIRM PASSWORD </label>
-                <p></p>
-                <input type="password" id="pass2" name="pw2" required />
-            </div>
-        </div> 
-
-        <div>
-            <button>CREATE ACCOUNT</button>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
