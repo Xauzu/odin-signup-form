@@ -3,6 +3,11 @@
     margin: 0px;
 }
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf) format("truetype");
+}
+
 html, body, form {
     height: 100%;
     width: 100%;
@@ -42,6 +47,37 @@ input:valid {
     position: relative;
 }
 
+.background > img {
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 50);
+}
+
+.logo {
+    position: absolute;
+    left: 35%;
+}
+
+.logo > img {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-text {
+    color: white;
+    font-family: "Norse Bold", Verdana, Tahoma;
+    font-size: 35px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
 .credits {
     position: absolute;
     bottom: 10px;
@@ -54,7 +90,6 @@ a {
 }
 
 .background {
-    width: min(40vw, 40%);
     height: 100%;
     flex: 1;
 }
